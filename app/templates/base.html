@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% if title %}
+	    <title>{{ title }} - FB_Buddy</title>
+	    {% else %}
+	    <title>Welcome to FB_Buddy</title>
+	    {% endif %}
+	</head>
+	<body>
+		<div>FB_Buddy: <a href="/index">Home</a></div>
+		<hr>
+		{% block content %}{% endblock %}
+	</body>
+</html>
